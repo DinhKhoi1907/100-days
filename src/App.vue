@@ -204,7 +204,7 @@ export default {
         if (typeof audio.loop == "boolean") {
           audio.loop = true;
         } else {
-          myAudio.addEventListener(
+          audio.addEventListener(
             "ended",
             function () {
               this.currentTime = 0;
